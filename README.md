@@ -1,10 +1,10 @@
-This repository contains scripts to calculate area under the curve (AUC) values from OD595 values collected for 2 bacterial strains over 48 hours in a 96-well Biolog plate (PM1). 
+** Code Description
 
-The metabolic capacity of wild-type and ∆rpoS mutant ECOR2 was assessed with Biolog assays. Biolog PM1 plates were used according to manufacturer’s instructions. Briefly, bacteria grown overnight on LB plates were resuspended in Biolog inoculating fluid to a final OD600 of 1.0. Each well of the Biolog plate was inoculated with 100 uL of cell suspension and incubated in a BioTek Kinetic plate reader for 24 hours. OD595 was used to measure reduction of tetrazolium violet dye every 15 minutes. Area under the curve (AUC) of OD595 values plotted over time were calculated as a measure of bacterial oxidation for each carbon source tested. 
+This repository contains raw data files and code used to calculate area under the curve (AUC) of OD595 values collected for wild-type and *∆rpoS* *E. coli* strain ECOR2 during incubation in Biolog PM1 plates, as outlined in the manuscript: *Title*
+ 
+**Code**
 
-**Scripts**
-
-There are 3 scripts required to calculate the AUC values from raw Biolog plate data. The order in which they are used is denoted at the beginning of the script name as "step_1", "step_2", and "step_3". 
+There are 3 scripts required to calculate the AUC values from raw Biolog plate data for two bacterial strains. The order in which they are used is denoted at the beginning of the script name as "step_1", "step_2", and "step_3". 
 
 1. The first script (step_1_read_continuous_biolog_function_mb.R) encodes a function that reads in raw Biolog data files (as excel documents), normalizes the OD595 readings, and returns the file for each bacterial strain as a matrix. It also denotes the wells in which the readings went negative after normalization and converts those values to "0".
 
@@ -24,4 +24,4 @@ viridis (color scheme of heatmap)
 
 **Data**
 
-The raw excel files used to calculate AUC for wild-type ECOR2 and its isogenic *∆rpoS* mutant, as well as the csv file for creating a heatmap from those values, are included in the "data" folder of this repository. For reference, "strain 1" refers to wild-type while "strain 2" refers to the *∆rpoS* mutant.
+The raw excel files used to calculate AUC for wild-type ECOR2 and its isogenic *∆rpoS* mutant for each carbon substrate in the Biolog PM1 plate, as well as the csv file for creating a heatmap from those values, are included in the "data" folder of this repository. For reference, "strain 1" refers to wild-type ECOR2 while "strain 2" refers to the *∆rpoS* mutant.
