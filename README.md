@@ -10,9 +10,9 @@ This repository contains raw data files and code used to calculate area under th
 
 Base R is used for scripts outlined in steps 1-3 below. To generate a heatmap (step 4), the following packages are required:
 
-tidyverse
+    - tidyverse
 
-viridis (color scheme of heatmap)
+    - viridis (color scheme of heatmap)
  
 **Code**
 
