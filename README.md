@@ -17,6 +17,7 @@ There are 3 scripts required to calculate the AUC values from raw Biolog plate d
 Base R is used for scripts outlined in steps 1-3 above. To generate a heatmap (step 4), the following packages are required:
 
 tidyverse
+
 viridis (color scheme of heatmap)
 
 **Data**
