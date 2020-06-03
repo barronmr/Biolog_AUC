@@ -20,11 +20,11 @@ There are 3 scripts required to calculate the AUC values from raw Biolog plate d
 
 1. The first script (step_1_read_continuous_biolog_function_mb.R) encodes a function that reads in raw Biolog data files (as excel documents), normalizes the OD595 readings, and returns the file for each bacterial strain as a matrix. It also denotes the wells in which the readings went negative after normalization and converts those values to "0".
 
-2. The second script, (step_2_continuous_auc_function.mb.R), is a function that calculates AUC values from the Biolog plate data.
+2. The second script, (step_2_continuous_auc_function.mb.R), encodes a function that calculates AUC values from the Biolog plate data.
 
-3. The final script (step_3_calculate_auc_biolog_mb.R) applies functions from the first two scripts to generate a single excel file denoting the well identity of the 96-well plate and AUC values for each bacterial strain.
+3. The final script (step_3_calculate_auc_biolog_mb.R) applies functions from steps 1 and 2 to generate a single excel file denoting AUC values for each bacterial strain.
 
-4. To generate a heatmap from the resulting AUC values, the auc_heatmap_mb.R script can be used. 
+4. To generate a heatmap from the resulting AUC values, the auc_heatmap_mb.R script is used. 
 
 **Data**
 
