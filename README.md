@@ -1,6 +1,6 @@
 **Description**
 
-This repository contains raw data files and code used to calculate area under the curve (AUC) of readings collected at optical density 595 (OD595) for *E. coli* strain ECOR2 and its isogenic *∆rpoS* mutant during incubation in Biolog PM1 plates, as outlined in the manuscript: *Title*
+This repository contains raw data files and code used to calculate area under the curve (AUC) of OD595 values collected over 24 hrs for *E. coli* strain ECOR2 and its isogenic *∆rpoS* mutant during incubation in Biolog PM1 plates, as outlined in the manuscript: *Title*
 
 
 **Abstract**
