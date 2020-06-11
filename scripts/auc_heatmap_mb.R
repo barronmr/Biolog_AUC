@@ -8,7 +8,7 @@
 #OUTPUT
 #2. Heatmap comparing AUC of each strain (viridis color scheme)
 #---------------------------------------------------------------------------------------------------------------------------------------
-### LIBRARY REQUIREMENTS #### install.packages("tidyr")
+### LIBRARY REQUIREMENTS #### 
 
 library(tidyr)
 library(tidyverse)
@@ -39,7 +39,7 @@ auc_heatmap <- ggplot(data_auc_long, mapping = aes(x = Strain,
   coord_fixed(ratio = 0.2) +
 
   #LABEL X AND Y AXES
-   xlab(label = "Strain") +
+  xlab(label = "Strain") +
   ylab(label = "Carbon Source") +
 
   #CHANGE COLOR SCHEME
