@@ -1,6 +1,6 @@
 **Description**
 
-This repository contains raw data files and code used to calculate area under the curve (AUC) of OD595 values collected for wild-type and *∆rpoS* *E. coli* strain ECOR2 during incubation in Biolog PM1 plates, as outlined in the manuscript: *Title*
+This repository contains raw data files and code used to calculate area under the curve (AUC) of readings collected at optical density 595 (OD595) for *E. coli* strain ECOR2 and its isogenic *∆rpoS* mutant during incubation in Biolog PM1 plates, as outlined in the manuscript: *Title*
 
 
 **Abstract**
@@ -8,7 +8,7 @@ This repository contains raw data files and code used to calculate area under th
  
  **Packages**
 
-Base R is used for scripts outlined in steps 1-3 below. To generate a heatmap (step 4), the following packages are required:
+Base R is used for scripts outlined in steps 1-3 below. To generate a heatmap from resulting AUC values (step 4), the following packages are required:
 
     - tidyverse
 
@@ -16,7 +16,7 @@ Base R is used for scripts outlined in steps 1-3 below. To generate a heatmap (s
  
 **Code**
 
-There are 3 scripts required to calculate the AUC values from raw Biolog plate data. The order in which they are used is denoted at the beginning of the script name as "step_1", "step_2", and "step_3". 
+There are 3 scripts used to calculate the AUC from raw Biolog plate data. The order in which they are used is denoted at the beginning of the script name as "step_1", "step_2", and "step_3". 
 
 1. The first script (step_1_read_continuous_biolog_function_mb.R) encodes a function that reads in raw Biolog data files (as excel documents), normalizes the OD595 readings, and returns the file for each bacterial strain as a matrix. It also denotes the wells in which the readings went negative after normalization and converts those values to "0".
 
