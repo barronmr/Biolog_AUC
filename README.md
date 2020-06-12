@@ -8,7 +8,7 @@ This repository contains raw data files and code used to calculate area under th
  
  **Packages**
 
-Base R is used for scripts outlined in steps 1-4 below. To generate a heatmap from resulting AUC values (step 4), the following packages are required:
+Base R is used for code outlined in steps 1-3 below. To generate a heatmap from resulting AUC values (step 4), the following packages are required:
 
     - tidyverse
 
