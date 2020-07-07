@@ -1,10 +1,11 @@
 **Description**
 
-This repository contains raw data files and code used to calculate area under the curve (AUC) of OD595 values collected over 24 hrs for *E. coli* strain ECOR2 and its isogenic *∆rpoS* mutant during incubation in Biolog PM1 plates, as outlined in the manuscript: *Title*
+This repository contains raw data files and code used to calculate area under the curve (AUC) of OD595 values collected over 24 hrs for *E. coli* strain ECOR2 and an isogenic *∆rpoS* mutant during incubation in Biolog PM1 plates, as outlined in the manuscript: "Loss of RpoS Attenuates the Ability of *Escherichia coli* Strain ECOR2 to Colonize Human Intestinal Organoids but Not the Germ-Free Mouse Intestine", 2020, authored by Madeline R. Barron, Roberto J. Cieza, David R. Hill, Veda K. Yagadiri, Jason R. Spence, and Vincent B. Young. 
 
 
 **Abstract**
- *Add when ready 
+
+Pluripotent stem-cell-derived human intestinal organoids (HIOs) are three-dimensional, multicellular structures that model the microbe-naïve intestinal epithelium in an in vitro system. We recently demonstrated that microinjection of the non-pathogenic *E. coli* strain, ECOR2, into HIOs induced morphological and functional maturation of the HIO epithelium, including increased secretion of mucins and cationic antimicrobial peptides (Hill DR, Huang S, Nagy MS, Yadagiri VK, Fields C, Mukherjee D, Bons B, Dedhia PH, Chin AM, Tsai YH, Thodla S, Schmidt TM, Walk S, Young VB, Spence JR, eLife 6:e29132, 2017, https://doi.org/10.7554/eLife.29132). This study highlighted the utility of HIOs for studying epithelial responses to bacterial intestinal colonization. In the current work, we use ECOR2 as a biological probe to investigate the bacterial response to colonization of the HIO lumen as a surrogate of the mammalian gut. In *E. coli* and other Gram-negative bacteria, adaptation to environmental stress is regulated by the general stress response sigma factor, RpoS. Here, we generated an isogenic *∆rpoS* ECOR2 mutant to compare challenges faced by a bacterium during colonization of the HIO lumen relative to the germ-free mouse intestine, which is currently the best available system for studying the initial establishment of bacterial populations within the gut. We demonstrate that loss of RpoS significantly decreases the ability of ECOR2 to colonize HIOs, though it does not prevent colonization of germ-free mice. These results indicate that HIOs pose a uniquely restrictive luminal environment to *E. coli* during colonization, thus increasing our understanding of the HIO model system as it pertains to studying the establishment of intestinal host-microbe symbioses.  
  
  **Packages**
 
