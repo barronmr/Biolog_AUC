@@ -43,7 +43,7 @@ auc_heatmap <- ggplot(data_auc_long, mapping = aes(x = Strain,
   ylab(label = "Carbon Source") +
 
   #CHANGE COLOR SCHEME
-  scale_fill_viridis("AUC") + #change color
+  scale_fill_distiller("AUC", palette = "RdYlBu") + #change color
 
   #CHANGE SIZE AND COLOR OF X AND Y LABELS, AXES, LEGEND TITLES
    theme(
