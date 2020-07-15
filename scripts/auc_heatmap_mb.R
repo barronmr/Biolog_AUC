@@ -8,16 +8,17 @@
 #OUTPUT
 #2. Heatmap comparing AUC of each strain (viridis color scheme)
 #---------------------------------------------------------------------------------------------------------------------------------------
-### LIBRARY REQUIREMENTS #### 
+### LIBRARY REQUIREMENTS #### install.packages("tidyr")
 
-library(tidyr)
 library(tidyverse)
-library(extrafont)
 library(viridis)
-
+getwd()
+setwd("/Users/maddiebarron/desktop")
 ### READ IN CSV FILE OF AUC VALUES FOR STRAIN 1 AND STRAIN 2 (INCLUDES NAME OF CARBON SOURCE FOR EACH WELL, AS OUTLINED BY BIOLOG)
 
-data_auc <- read.csv(file = "file_name.csv")
+getwd()
+setwd("/Users/maddiebarron/desktop")
+data_auc <- read.csv(file = "AUC_pm1_01_2020_3.csv")
 
 ### CONVERT TO TIBBLE ###
 
@@ -26,17 +27,22 @@ data_auc_2 <- as_tibble(data_auc)
 ### GATHER DATA SO EACH VARIABLE IS UNDER ONE COLUMN (I.E. STRAIN AND CARBON SOURCE) ###
 
 data_auc_long <- gather(data = data_auc_2, key = Strain, value = AUC, -Carbon.Source)
+data_auc_long
+
+data_auc_long_2 <- arrange(data_auc_long, Strain, AUC)
+
+data_auc_long_2
 
 ### GENERATE HEATMAP WITH GGPLOT ###
 
-auc_heatmap <- ggplot(data_auc_long, mapping = aes(x = Strain,
-                                                   y = Carbon.Source,
-                                                   fill = AUC)) +
+auc_heatmap <- ggplot(data_auc_long_2, mapping = aes(x = Strain,
+                                                   y = reorder(Carbon.Source, -AUC),
+                                                  fill = AUC)) +
   #BETWEEN TILES = WHITE
   geom_tile(color = "white") + #between tiles = white
 
   #CHANGE SIZE OF HEAT MAP TILES
-  coord_fixed(ratio = 0.2) +
+  coord_fixed(ratio = 0.5) +
 
   #LABEL X AND Y AXES
   xlab(label = "Strain") +
@@ -52,3 +58,4 @@ auc_heatmap <- ggplot(data_auc_long, mapping = aes(x = Strain,
     text = element_text(colour = "black", size = 9))
 
 auc_heatmap
+
