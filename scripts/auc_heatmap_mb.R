@@ -27,11 +27,8 @@ data_auc_2 <- as_tibble(data_auc)
 ### GATHER DATA SO EACH VARIABLE IS UNDER ONE COLUMN (I.E. STRAIN AND CARBON SOURCE) ###
 
 data_auc_long <- gather(data = data_auc_2, key = Strain, value = AUC, -Carbon.Source)
-data_auc_long
 
 data_auc_long_2 <- arrange(data_auc_long, Strain, AUC)
-
-data_auc_long_2
 
 ### GENERATE HEATMAP WITH GGPLOT ###
 
