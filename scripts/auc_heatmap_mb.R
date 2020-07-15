@@ -11,13 +11,9 @@
 ### LIBRARY REQUIREMENTS #### install.packages("tidyr")
 
 library(tidyverse)
-library(viridis)
-getwd()
-setwd("/Users/maddiebarron/desktop")
+
 ### READ IN CSV FILE OF AUC VALUES FOR STRAIN 1 AND STRAIN 2 (INCLUDES NAME OF CARBON SOURCE FOR EACH WELL, AS OUTLINED BY BIOLOG)
 
-getwd()
-setwd("/Users/maddiebarron/desktop")
 data_auc <- read.csv(file = "AUC_pm1_01_2020_3.csv")
 
 ### CONVERT TO TIBBLE ###
