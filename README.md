@@ -1,6 +1,6 @@
 **Description**
 
-This repository contains raw data files and code used to calculate area under the curve (AUC) of OD595 values collected over 24 hrs for *E. coli* strain ECOR2 and an isogenic *∆rpoS* mutant during incubation in Biolog PM1 plates, as outlined in the manuscript: "Loss of RpoS results in attenuated *Escherichia coli* colonization of human intestinal organoids and a competitive disadvantage within the germ-free mouse intestine", 2020, authored by Madeline R. Barron, Roberto J. Cieza, David R. Hill, Veda K. Yagadiri, Jason R. Spence, and Vincent B. Young. 
+This repository contains raw data files and code used to calculate area under the curve (AUC) of OD595 values collected over 24 hrs for *E. coli* strain ECOR2 and an isogenic *∆rpoS* mutant during incubation in Biolog PM1 plates, as outlined in the manuscript: "Loss of RpoS results in attenuated *Escherichia coli* colonization of human intestinal organoids and a competitive disadvantage within the germ-free mouse intestine", 2020, authored by Madeline R. Barron, Roberto J. Cieza, David R. Hill, Sha Huang, Veda K. Yagadiri, Jason R. Spence, and Vincent B. Young. 
 
 
 **Abstract**
